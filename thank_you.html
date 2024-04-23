@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You!</title>
+</head>
+<body>
+
+  <h1>Thank You!</h1>
+
+  <p>Thank you for submitting the form, <span id="userName"></span>!</p>
+
+  <script>
+    // Retrieve the submitted name from the query string
+    var params = new URLSearchParams(window.location.search);
+    var userName = params.get('name');
+    document.getElementById("userName").textContent = userName;
+  </script>
+
+</body>
+</html>
